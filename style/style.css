@@ -320,7 +320,10 @@ ul#navigation li a:hover
 	font:100% arial, sans-serif;
 }
 
-
+.canvas-holder
+{
+  width: 700px; height: 409px; border:2px solid #000000  
+}
 
 /*** form ingnore now ***/
 
