@@ -7,11 +7,6 @@
 		</title>
 
 		<link rel="stylesheet" type="text/css" href="style/style.css"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
-<!-- try out this import json -->
-
-        <script src="howmany.js"></script>
-
 	</head>
 
 	<body>
@@ -55,8 +50,14 @@
 		  			<div class="sidebar_top"></div>
 		  	     	<div class="sidebar_item">
 		  	    		<h3>Useful Links</h3>
+                          
+                          
+                          
+                          
+                          
+                          
 		  				<ul>
-		  					<li><a href="#">link1</a></li>
+		  					<li><a href="blog.html">US Baby Name</a></li>
 		  					<li><a href="#">link2</a></li>
 		  	    			<li><a href="#">link3</a></li>
 		  	    			<li><a href="#">link4</a></li>
@@ -83,40 +84,19 @@
 
 <!--content section -->
 			<div id="content">
-			<h1> Welcome to my home page </h1>
-				<p> The fact is that you know your business the best, and while it may be helpful to hire outside help, that can get expensive. Below is a helpful guide to know how to write content for your website.</p>
-				<p>What are your goals?</p>
-				<p>What information do I want on my website?</p>
-				<p>The next step of the writing process is creating a site map. A site map is simply an outline of what the information on your website will look like. </p>
-			<h2>Writing style</h2>
-				<p>There are three different, unique ways to write your content for your website. Usually you will want a balance between the three.</p>
-				<ul>
-					<li>1. Write Succinctly for Web Users</li>
-					<li>2. Write Professionally to Build up Your Image</li>
-					<li>3. Write Sneaky for Search Engines</li>
-				</ul>
-                
-                
-                
-                ****** Line chart one *****
-       
-   
-    
-    <canvas id="myChart" class="canvas-holder"></canvas>
-    
-    </br></br></br> </br>
-                ****** Bar chart two *****
-       
-	<canvas id="myChart2" class="canvas-holder"></canvas>
-		
-    </br></br></br> </br>
-                ****** Radar chart three *****
-   
-	<canvas id="myChart3" class="canvas-holder"></canvas>
-
-       
-       
-            </div> <!-- div id="content"  line80-->
+                   
+        	
+               <script src="document.js"> </script>
+           
+            <script>
+                var blogName = window.location.hash;
+                if (blogName != null && blogName.length != 0) {
+                    linkage(blogName.substr(1) + ".html");
+                } 
+            </script>
+                           
+                          
+         </div>    
 		</div> <!-- close for div id="site_content" line34-->
 <!-- end of content section -->
 
@@ -129,8 +109,6 @@
 <!-- end of footer section -->
 
 		</div> <!-- div id="general_main" -->
-        
-        <script src="chart_baby.js"></script>   <!-- need to insert here because it need to be mentioned above --->
 	</body>
 </html>
 
