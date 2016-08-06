@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            National Flight Delay Analysis
+        </title>
+        <link rel="stylesheet" type="text/css" href="style/style.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js"></script>        
+        <script src="JS/papaparse.min.js"></script>
+    </head>
+  <body>
+  <!--content section -->
+    <div id="article">
+        <h1>Some thoughts on the US Flight</h1>
+        <p>Last year, I took flights over 13 times within three months in China and what drove me crazy was almost every flights have been delayed and it raised questions in my mind since then. Why are Chinese flights in such a disordered environment? Surprisingly, the Hainan airline that I took from China to Seattle had been delayed for four hours. It was a really bad experience because I need to eat at the airport, which costly and my whole flight hours raised from 12 hours to 16 hours. Thus, it made the advantages of nonstop flight meaningless. Even though the flight's company provided a hotel for us to rest within the four hours as well as a 200RMB compensation fee, my anger releases a little bit but I still wish this would not happen on me next time.</p>
+        <p>I start to question, does the US performs better than China? Later on, I got the answers from two flights that I flew to Houston and Ohio on last Thanksgiving and Christmas. Yes, the delay still has been a big issue so I start to analysis the reasons by collecting the data from Department of Transportation, that was a huge data resource center. I chose one-month data from the current year 2016 as a starting point.</p>
+        <h2>Top 10 Airport</h2>
+        <p>There are three different, unique ways to explain the baby name data, let�s take a look.</p>
+        <ul>
+            <li>1. How many boys and girls are born each year? </li>
+            <li>2. Name diversity since 1880 </li>
+            <li>3. Most popular name over time </li>
+        </ul>
+        <h2>1. Airport</h2>
+        <h3>Top 10 Airport</h3>
+        <p>First, I look for the top 10 airports in the US by adding up the departure flights and arrival flights together. Surprising, Jackson Atlanta, GA is the busiest airport while Chicago O'Hare International airport comes second. Maybe next time we should consider leaving enough time if we transfer or travel to Atlanta. Another fact I found is the departure and arrival flights are not identical, however, there are only a slight differences that might happen for some unknown reasons.</p>
+        <canvas id="chart-popularairport" class="canvas-holder"></canvas>
+        <br/><br/>
+        <h3>Top 10 Airport Departure & Arrival Delay Ratio</h3>
+        <p>Now it comes the most concern topic. How is the flight's performance in regarding delay? Will Atlanta be the most frequent airport for delay flights? I calculate the delay ratio by using the number of delay flights divide the total flight's number. Let me tell you the answer. It actually might not be what you have guessed. San Francisco actually keeps the highest delay ratio of almost 30% whereas Atlantic operated the best among all top 10 airports as you could see it only about 14% delay rate. So it is good to know we should be aware of traveling to LA and those big cities.</p>
+        <canvas id="chart-popularairport-deparri-delayratio" class="canvas-holder"></canvas>
+        <br/><br/>
+        <h3>Airport Departure Delay Breakdown</h3>
+        <p>If we further analysis the reasons for a delay, some unexpected reason came out in the chart shows that carrier delay and the late craft has been the two biggest reasons for the delay. Questions would be asked was what does carrier delay mean? To explain that, you need to know the U.S air carrier provides air transportation service and the data I gather in this article was provided by the Bureau of Transportation Statistics(BTS) for Airline Service Quality Performance System(ASQP) flights only. Here is the detailed explained of these five type of delay. (TYPE OF DELAY) http://aspmhelp.faa.gov/index.php/Types_of_Delay</p>
+        <P>It looks like the carrier delay includes some combined issues for internal maintenance and inspection of aircraft and logistics of crews, passengers, and baggage. Now, if you heard the radio calling for missing passengers to board or handling disabled passengers, yes, they all counts on the time delay. However, these occurrences were hard to avoid and quite understandable, especially in a big airport. Another big reason is the late aircraft. Why is it not due to weather? I would also raise the same questions as you are since that is the most common explanation we have been told. In fact, the similar pattern of these airports gives no support for explaining only weather leads to delay. Plus, the NAS delay becomes the third biggest reasons so we might have more concerns for how efficiency will the national airspace system operates.</p>        
+        <canvas id="chart-popularairport-delaybreakdown" class="canvas-holder"></canvas>
+        
+        <h2>2. Airline</h2>
+        <h3>Top Airlines</h3>
+        <p>As we had the initial analysis for flights delay, the airline catches our attentions and this chart shows top 10 airlines in the U.S. In addition, I had also added the index code for the airline for your easier reference. An Interesting fact is Southwest Airline wins first place and it reminds me of once my friend suggested me to always check Southwest Airline out because they often quote the lowest price. I have not taken any Southwest Airline but I guess that might be the main reason? As far as I know, Frontier promote lots of cheap prices but it ranks the last. Probably due to their small the flights and limited operation destinations.</p>  
+        <canvas id="chart-popularairline" class="canvas-holder"></canvas>
+        <br/><br/>
+        <h3>Top 10 Airline Departure Delay Ratio</h3>
+        <p>A similar pattern for airline delay when compared to the airport. Both of the departure and arrival ratios are almost identical. JetBlue Airways and Spirit Airlines had approximately 30% delay ratio. So I guess everyone makes a full preparation of things you could do while waiting for flights.</p>
+        <canvas id="chart-popularairline-deparri-delayratio" class="canvas-holder"></canvas>
+        <br/><br/>
+        <h3>Airline Delay breakdown</h3>
+        <p>I sort the data based on the total delay flights which were the total of all five reasons of delay. By airline aggregation method, same found as airports breakdown: all airline patterns remain similar patterns. But the reason of weather seems not as much as the airport&#39s  delay breakdown.</p>
+        <canvas id="chart-popularairline-delaybreakdown" class="canvas-holder"></canvas>
+       
+        <h2>3.Air route</h2>
+        <h3>Top 10 hot route</h3>
+        <p>The results show the hottest route are from San Francisco to Las Angeles. And Las Angeles has three popular routes to San Francisco, Las Vegas, New York City. Las Vegas also ranked as number two hottest route as its famous for the ideal vacation place. </p> 
+        <canvas id="chart-popularroute" class="canvas-holder"></canvas>
+        <br/><br/>
+        <h3>Top 10 Route&#39s Departure and arrival delay ratio</h3>
+        <p>Based on the ranking of the top 10 hot route, I generate the delay ratio for each route. The famous city attracts more people to travel. Obviously, three hottest round trips include San Francisco and Las Vegas, Las Angeles to Las Vegas and Las Vegas to New York City. So as the delay ratios. Something I spot interesting is the departure delay ratio seems higher than the arrival delay ratio. Luckily, from my personal experience, most of the time if the flights had delayed for took off, it doesn't mean the arrival time will be definitely late. I guess the pilot caught up the time for us.</p> 
+        <canvas id="chart-popularroute-deparri-delayratio" class="canvas-holder"></canvas>
+        <br/><br/>
+        <h3>Popular Route Delay Breakdown & the End </h3>
+        <p>The final breakdown chart shows differently than the airline and airport. NAS becomes the biggest issue and late craft comes next. I got the feeling that the cause of the late craft is somehow related to the NAS and Carrier. If that is the case, we should really consider improving the operation efficiency and effectiveness at the airport. What kind of emergency plan and preventive measure needs to prepare for the heavy traffic seasons? I recently notice that more and more company focusing on the lean logistics, six sigma concept. Optimize the operation process would be a huge topic and full of potentiation to explore. That might be an interesting topic I would like to research on in the future. Hopefully, we could hear less from the radio broadcast: due to air traffic control or late arrival airport reasons, we have the delay. However, I believe with more and more public awareness and technology evolved, the issues would be paid attention and solve. </p> 
+        <canvas id="chart-popularRoute-delaybreakdown" class="canvas-holder"></canvas>
+    </div> <!-- div id="content"  line80-->
+<!-- end of content section -->
+    
+        <script src="flight-delay-chart.js"></script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,11 @@
+PopularAirport,DepartureDelayRatio,ArrivalDelayRatio
+MCO,0.19,0.19
+IAH,0.14,0.13
+LAS,0.18,0.16
+PHX,0.15,0.13
+SFO,0.23,0.29
+LAX,0.2,0.19
+DFW,0.15,0.13
+DEN,0.14,0.11
+ORD,0.23,0.16
+ATL,0.15,0.13

@@ -99,6 +99,17 @@ ul li
 
 }
 
+#index-banner
+{
+	background:  transparent url(banner5.jpg) no-repeat;
+	width: 965px; /** change:oringal 965px 180***/
+	height: 270px;
+	margin-bottom: 20px;
+	padding: 27px 0 0 0;
+			/**border:2px solid #E7746F;/*******/,
+
+}
+
 #logo
 {
 	width: 880px;
@@ -371,13 +382,143 @@ ul#navigation li a:hover
   border: 0;
   background: none;}
 
+.item{
+	margin: 0;
+	Padding: 2em o;
+	border-top: 1px solid rgba(39,41,43,.15);
+	min-width: 100%;
+	font-size: 1em;
+	table-layout: fixed;
+	display:table;
+	width: 100%;
+
+}
+
+.content {
+	width: 100%;
+	display: table-cell;
+	margin-left: 0;
+	vertical-align: top;
+	padding-left: 1.5em;
+	margin:0;
+	padding: 0;
+	font-size: 1em;
+}
+
+.articletitle {
+	color: rgba(0,0,0,.85);
+	margin: - .165em 0 0;
+	font-size: 1.28rem;
+}
 
 
+.meta {
+	color: gray;
+	font-size: 1em;
+	font-weight: bolder;
+}
+
+ **********************************
+#hpcontent {
+    max-width: 960px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#intro-text {
+	text-align: center;
+}
 
 
+.span_6 {
+	float: left;
+	display: block;
+	margin: 2px;
+	padding: 40px 0 0 5px;
+	width: 49%;
+	height: 100%;
+
+}
+
+#row{
+	width: 960px;
+	height: 470px;
+}
+
+p.intro{
+	width: 470px;
+	height: 371px;
+	
+}
+
+<!-- body class - home--> 
+.home .span_6{ 
+	width: 49%
+}
 
 
+#intro-text span {
+    display: block;
+}
 
+#t-one {
+    font-size: 1.8rem;
+    line-height: 200%;
+    font-style: italic;
+}
 
+.t-two-1 {
+    font-size: 4rem;
+    margin-bottom: 2.4rem;
+}
 
+.t-two {
+    line-height: 60px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px #333;
+    font-weight: 700;
+	color:  #e25454;
+}
 
+.t-two-2 {
+    font-size: 2.5rem;
+}
+
+#t-three {
+    font-size: 2.4rem;
+    line-height: 4.8rem;
+    font-style: italic;
+    margin: 1.6rem;
+    
+}
+
+#t-three span{
+	background: floralwhite;
+	padding: 0 10px;
+	display:incline;
+}
+
+#t-four {
+	margin-bottom: 1.6rem;
+}
+#t-five {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+img{
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+.article.picture
+{
+	width: 25%;
+	float: left;
+	margin: 0 15px 0 0;
+	
+}
