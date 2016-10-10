@@ -5,23 +5,23 @@
 			Michelle's Garden
 		</title>
 
-		<link rel="stylesheet" type="text/css" href="style/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/style.css"/>
 	</head>
 	<body>
 		<div id="general_main">
 			<div id="header">
 				<div id="logo">
 		 			<div id="logo_text">
-		 				<h1><a href="index.html">Michelle's<span class="logo_color">Garden</span></a></h1>
+		 				<h1><a href="../index.html">Michelle's<span class="logo_color">Garden</span></a></h1>
 		 				<h2>Just Begin to Explore, Learn to Grow</h2>
 		 			</div>
 		    	</div> <!--div id="logo" line13-->
 				<div id="navbar">
 		  			<ul id="navigation">
-						<li><a href="index.html">Home</a></li>
+						<li><a href="../index.html">Home</a></li>
 			  			<li class="selected"><a href="blog.html">Blog</a></li>
-			  			<li><a href="portfolio.html">Portfolio</a></li>
-			  			<li><a href="about.html">About</a></li>
+			  			<li><a href="../portfolio.html">Portfolio</a></li>
+			  			<li><a href="../about.html">About</a></li>
 		  			</ul>
 		  	   </div><!-- div id="navbar"-->
 		    </div> <!-- div id="header" line 12-->
@@ -34,9 +34,9 @@
 		  				<div class="sidebar_top"></div>
 		  				<div class="sidebar_item">
 		  					<h3>Latest Post</h3>
-		  					<h4>Some thoughts on the US flight delay</h4>
-		  					<h5>Auguest 5th, 2016</h5>
-		  					<p>Last year, I took flights over 13 times within three months in China and what drove me crazy was almost every flights have been delayed and it raised questions in my mind since then.<br/><a href="blog.html#flight-delay-analysis" onclick = "window.location.hash = 'flight-delay-analysis';window.location.reload();">Read More</a></p>
+		  					<h4>First impression on Power BI</h4>
+		  					<h5>Oct 08, 2016</h5>
+		  					<p>I recently found out Power BI is really interesting and a great tool to consider if you seek for data visualization chart and report. I did some research on the Power Bi and want to share with you the new tool for analysis and visualize the data.<br/><a href="blog.html#world-rank-university-analysis" onclick = "window.location.hash = 'world-rank-university-analysis';window.location.reload();">Read More</a></p>
 		  		 		</div> <!-- div class="sidebar_item" line40-->
 				 		<div class="sidebar_base"></div> <!-- check-->
 		 			</div> <!-- close for div class="sidebar" line38-->
@@ -73,6 +73,48 @@
 
 <!--content section -->
 				<div id="content">
+					<div class="item">
+						<div class="section">
+							<h3 class="header articletitle">
+								<a href="blog.html#world-rank-university-analysis" onclick = "window.location.hash = 'world-rank-university-analysis';window.location.reload();">First impression on Power BI</a>
+							</h3>
+							<div class="meta">
+								<h4 class="header date subheader">Oct 08, 2016</h4>
+							</div>
+							<div>
+                                <div class="article picture">
+                                    <img src="http://msutoday.msu.edu/_/img/assets/2014/world-university-rankings-logo.jpg"></img>
+                                </div>
+							<div class="ui divider hidden"></div>
+							<div class="description">
+								<p>I recently found out Power BI is really interesting and a great tool to consider if you seek for data visualization chart and report. I did some research on the Power Bi and want to share with you the new tool for analysis and visualize the data.</p>
+							</div>
+							<div class="ui divider hidden"></div>
+                            </div>
+                        </div>
+					</div>
+
+					<div class="item">
+						<div class="section">
+							<h3 class="header articletitle">
+								<a href="blog.html#USbaby" onclick = "window.location.hash = 'USbaby';window.location.reload();">US Baby Name</a>
+							</h3>
+							<div class="meta">
+								<h4 class="header date subheader">Aug 26, 2016</h4>
+							</div>
+							<div>
+                                <div class="article picture">
+                                    <img src="http://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_360/public/images/wordpress/47945/shutterstock_126390038-337x272.jpg"></img>
+                                </div>
+							<div class="ui divider hidden"></div>
+							<div class="description">
+								<p>This is the first article as my journey on technical blog. The mean purpose is to start my data analytics career and practice my data visualization skills. It really makes my life embracing more fresh and breeze air because web design seems open a new world to me. This unique way creates a way for me to start my own interests of design which corporate with the modern technology.</p>
+							</div>
+							<div class="ui divider hidden"></div>
+                            </div>
+                        </div>
+					</div>
+
                     <div class="item">
 						<div class="section">
 							<h3 class="ui header">
@@ -93,30 +135,9 @@
                             </div>
                         </div>
 					</div>
-					
-					<div class="item">
-						<div class="section">
-							<h3 class="header articletitle">
-								<a href="blog.html#USbaby" onclick = "window.location.hash = 'USbaby';window.location.reload();">US Baby Name</a>
-							</h3>
-							<div class="meta">
-								<h4 class="header date subheader">June 16, 2016</h4>
-							</div>
-							<div>
-                                <div class="article picture">
-                                    <img src="http://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_360/public/images/wordpress/47945/shutterstock_126390038-337x272.jpg"></img>
-                                </div>
-							<div class="ui divider hidden"></div>
-							<div class="description">
-								<p>This is the first article as my journey on technical blog. The mean purpose is to start my data analytics career and practice my data visualization skills. It really makes my life embracing more fresh and breeze air because web design seems open a new world to me. This unique way creates a way for me to start my own interests of design which corporate with the modern technology.</p>
-							</div>
-							<div class="ui divider hidden"></div>
-                            </div>
-                        </div>
-					</div>
-
                     <script src="document.js"> </script>        
 				</div>
+
 				<script>
 						var blogName = window.location.hash;
 						if (blogName != null && blogName.length != 0) {
@@ -130,7 +151,7 @@
 			<div id="content_footer"></div>
 			<div id="footer">
 				<p>
-					<a href="index.html">Home</a> | <a href="blog.html">Blog</a> | <a href="portfolio.html">Portfolio</a> | <a href="about.html">About</a>
+					<a href="../index.html">Home</a> | <a href="blog.html">Blog</a> | <a href="../portfolio.html">Portfolio</a> | <a href="../about.html">About</a>
 				</p>
 				<p>Contact <a href="https://www.linkedin.com/in/min-michelle-xiao">Linkedin</a> | <a href="https://github.com/minmichelle">Github</a></p>
 			</div> <!-- div id="footer"-->

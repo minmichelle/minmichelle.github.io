@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+         First impression with Power BI   
+        </title>
+        <link rel="stylesheet" type="text/css" href="../style/style.css"/>
+    </head>
+  <body>
+  <!--content section -->
+    <div id="article">
+        <h1>First impression with Power BI</h1>
+        <p>I recently found out Power BI is really interesting and a great tool to consider if you seek for data visualization chart and report. I did some research on the Power Bi and want to share with you the new tool for analysis and visualize the data.</p>
+        <h2>Power BI Introduction</h2>
+        <p>Power BI updated monthly and keep innovation about new features. As a relative young product which provides business intelligence platform technology, Power BI consolidates several tools into an all-in-one process. From extract data from multiple sources, create a dataset and manipulate and pre-process the data into the format what you want to visualize the data and publish as a report or dashboards that can easily be shared. It provided agile data analysis with self-service BI analytics and rather than a data warehouse, it managed in the collaboration cloud sharing platform, capable of perform quick, dependent analysis with new measures or dimensions that don’t require IT involvement.</p>
+        <P>The query you created was constructed by DAX scripting language and has a visual environment for analyst who cannot write SQL. However, I found it runs pretty slow for a huge set of data, and if the data source updated, it takes a while for refresh the data. Sometimes I feel I would rather use SQL to query the data instead.</P>
+        <h2>My first project for Power BI</h2>
+        <p>I had both Power BI desktop application and Power BI cloud service. The Cloud service is mainly for sharing and creating dashboards, and it also comes with a unique features named quick insights, which offer some rudimentary automated analysis. But for wrangle and process data, I start with the Power BI desktop app.</p>
+        <p>I download the world ranking university data source from Kaggle.com. Then I import the CSV file and reshape and transform the data in the query editor. It also able to adding or moving columns, append queries, join tables for relational datasets. You could check the formula of the cell under the formula bar or go to View – Advanced editor to change the script which is written in M language.</p>
+        <p>Some filter, group, even some basic statistical functions like count, average, median and standard deviations are also available to use for summarize the values. The applied steps on the right side in the query editor keep track of every steps you made. You could click the X arrow to delete the steps. However, if you apply and close for the query editor, there is no Undo to get your original data back.</p>
+        <iframe width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiNzMzNTJmZGYtOTVjNi00NzM3LWI1MzEtZThiZWJkODQwMTcyIiwidCI6ImY5NGMyNTFjLTEzNDctNDIyZS1iM2VhLThhYzU2YmVmZDZjYiIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+        <h2>Data visualization</h2>
+        <h3>Create and configure the graph</h3>
+        <p>I start to make graph on some fields in the canvas. The bar graph display sum of the patents, publications and citations for each country. Adjust the values under the visualization panel to average, median, count, whichever makes sense to the graph. I click the ellipsis on the top right of the chart to sort by the patents from highest to lowest. There are also lots of chart configuration defaults in the visualization options like change the X- or Y-axes, background color, size or title alignment.</p>
+        <h3>Data filter</h3>
+        <p>Pivot the table into several different filters makes report readable and easily search information. You could either make the filters under the visualizations bar, however, this filters applied the entire report and cannot be modified once you shared your report as dashboard to other read-only users. Another approach is to add an interactive slicer which remained the original data for the needs of retrieve. I click the slicer among the charts, and use year, country as the sub category for quick search. I also add quick search bar for convenience. Here is the magic of this visual chart: if you click on one bar, all the other tables would instantly just show the data related with that one bar. For example, by customized year and country you want to check, all the graphs would narrow down to the criterial you had made. In Report for Academic Evaluation Performance for Top Ranked University, I am able to immediately find out the information like: in 2014, the total of publications from Top Ranked university in China. With the detailed national and world ranks and score of each institution in China.</p>
+        <h3>Filed Map</h3>
+        <p>For quickly display the relative differences for the distribution of the world ranking university, I choose the filed map to show how the numbers of university in proportion across the global. In the Distribution of World Ranking University report, the shaded in blue, with light blue representing the lower sentiment numbers while the dark blue for higher. Obviously, USA have more positive sentiment, and China comes to the second with the relative lighter blue. In this report, I can identify any country on the geographic map with the total number of world ranked university and their national ranking lists in year from 2012 to 2015. Another similar shape map named bubble map also have the same effects.</p>
+        <h3>Tip:</h3>
+        <ul>
+            <li>I noticed the slow performance of the Power BI datasets makes some uncertain factors. I lost my file for this so keep in mind always create a new Power Bi project before your work in case of any incidents.</li>
+            <li>When you make query, there is no Undo feature so make sure you don’t need the original data since it had been modified once you clicked the clicked the apply and close button. Otherwise, you have to re-create your steps from scratch.</li>
+        </ul>
+        <h3>Summary</h3>
+        <p>The Power BI plays important role for Microsoft BI strategy. The have a separate web: PowerBI.com, which updates new features monthly. I feel it is pretty achievable as a quick data analysis tool for onetime, frequently changing analysis on smaller data sets without the IT database connected involvements. Besides, it also works great as a graph designer tool to share data and dashboard, free for quick analysis and results sharing. I would also wait to see how will it be improved for example: better integration with the Dynamics CRM corporate analytics reporting; limited data memory accepted file; enable to make high volume and changing data processing reports for more enterprise analysis needs.</p>  
+    </div> <!-- div id="content"  line80-->
+<!-- end of content section -->
+  </body>
+</html>
